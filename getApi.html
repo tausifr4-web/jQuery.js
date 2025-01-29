@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laravel API Call</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      
+    }
+    th {
+      background-color: #801b1b;
+      color: white;
+     
+    }
+  </style>
+</head>
+<body>
+  <h1>API Call Example</h1>
+  <button id="fetchData">Get Data</button>
+  <button id="hideData">Hide Data</button>
+  <div id="output"></div>
+
+  <script>
+    $(document).ready(() => {
+      $('#fetchData').click(() => {
+        $.get('http://127.0.0.1:8000/api/students', function(data) {
+          let table = '<table><tr><th>ID</th><th>Name</th><th>Email</th><th>Address</th><th>Phone</th></tr>';
+          data.forEach(user => {
+            table += `<tr><td>${user.id}</td><td>${user.name}</td><td>${user.email}</td><td>${user.address}</td><td>${user.phone}</td></tr>`;
+          });
+          table += '</table>';
+          $('#output').html(table).show();
+        });
+      });
+      $('#hideData').click(() => $('#output').hide());
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//   <meta charset="UTF-8">
+//   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//   <title>Laravel API Call</title>
+//   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+// </head>
+// <body>
+//   <h1>API Call Example</h1>
+//   <button id="fetchData">Get Data</button>
+//   <button id="hideData">hide Data</button>
+//   <div id="output"></div>
+
+//   <!-- <script>
+//     $(document).ready(() => {
+//       $('#fetchData').click(() => {
+//         $('#output').toggle();
+//         if($('#output').is(':visible')){
+//           alert( 'FetchData');
+//           $.get('http://127.0.0.1:8000/api/students')
+//           .done(data => {
+//             $('#output').html('<pre>' + JSON.stringify(data, null, 2) + '</pre>');
+//           });
+
+//         }else{
+//           alert('Hide Data');
+//         }   
+//       });
+//     });
+//   </script> -->
+
+//   <script>
+//     $(document).ready(() => {
+//       $('#fetchData').click(() => {
+//         $('#output').show();
+//            $.get('http://127.0.0.1:8000/api/students')
+//           $.get('https://fakestoreapi.com/users')
+//           .done(data => {
+//             $('#output').html('<pre>' + JSON.stringify(data, null, 2) + '</pre>');
+//           }); 
+//       });
+//       $('#hideData').click(() => {
+//         $('#output').hide();
+//           $.get('http://127.0.0.1:8000/api/students')
+//           .done(data => {
+//             $('#output').html('<pre>' + JSON.stringify(data, null, 2) + '</pre>');
+//           }); 
+//       });
+//     });
+//   </script>
+// </body>
+// </html>

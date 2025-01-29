@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jquery</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- 1 -->
+
+  <!-- <h1 id="textWelcome">Hello World</h1>
+    <script>
+        
+        $(document).ready(function(){
+        //    document.getElementById("textWelcome").textContent="Good Morning";
+            $("#textWelcome").text("Good Morning");
+        });
+    </script> -->
+
+  <!-- 2 -->
+
+  <!-- <p>If you click on me, I will disappear.</p>
+    <p>Click me away!</p>
+    <p>Click me too!</p>
+    <script>
+
+        $(document).ready(function(){
+        $("p").click(function(){
+        $(this).hide();
+         });
+        });
+
+    </script> -->
+
+  <!-- 3 -->
+
+  <!-- <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("p").hide();
+            
+          });
+        });
+        </script>
+        </head>
+        <body>
+        
+        <h2>This is a heading</h2>
+        
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        <button>Click me</button> -->
+
+
+  <!-- 4
+    Selectors -->
+
+
+  <!-- <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("#test").hide();
+          });
+        });
+        </script>
+        
+        <h2>This is a heading</h2>
+        
+        <p>This is a paragraph.</p>
+        <p id="test">This is another paragraph.</p>
+        
+        <button>Click me</button> -->
+
+  <!-- 5 -->
+  <!-- <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $(".test").hide();
+          });
+        });
+        </script>
+                
+        <h2>This is a heading</h2>
+        
+        <p class="test">This is a paragraph.</p>
+        <p class="test">This is another paragraph.</p>
+        
+        <button>Click me</button> -->
+
+  <!-- 6 Selects all elements -->
+
+  <!-- <script>
+            $(document).ready(function(){
+              $("button").click(function(){
+                $("*").hide();
+              });
+            });
+            </script>
+            </head>
+            <body>
+            
+            <h2>This is a heading</h2>
+            
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+            
+            <button>Click me</button> -->
+
+  <!-- 7    -->
+
+  <!-- <script>
+            $(document).ready(function(){
+              $("button").click(function(){
+                $(this).hide();
+              });
+            });
+            </script>
+            
+            
+            <h2>This is a heading</h2>
+            
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+            
+            <button>Click me</button> -->
+
+  <!-- 8    -->
+
+  <!-- <script>
+            $(document).ready(function(){
+              $("button").click(function(){
+                $("p.intro").hide();
+              });
+            });
+            </script>
+            
+            
+            <h2 class="intro">This is a heading</h2>
+            
+            <p class="intro">This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+            
+            <button>Click me</button> -->
+
+  <!-- 9    -->
+
+  <!-- <script>
+            $(document).ready(function(){
+              $("button").click(function(){
+                $("p:first").hide();
+              });
+            });
+            </script>
+            
+            
+            <h2>This is a heading</h2>
+            
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+            
+            <button>Click me</button> -->
+
+  <!-- 10 -->
+
+  <!-- <script>
+            $(document).ready(function(){
+              $("button").click(function(){
+                $("ul li:first").hide();
+              });
+            });
+            </script>
+            </head>
+            <body>
+            
+            <p>List 1:</p>
+            <ul>
+              <li>Coffee</li>
+              <li>Milk</li>
+              <li>Tea</li>
+            </ul>
+            
+            <p>List 2:</p>
+            <ul>
+              <li>Coffee</li>
+              <li>Milk</li>
+              <li>Tea</li>
+            </ul>
+            
+            <button>Click me</button> -->
+
+  <!-- 11 -->
+
+  <!-- <script>
+            $(document).ready(function(){
+              $("button").click(function(){
+                $("ul li:first-child").hide();
+              });
+            });
+            </script>
+            </head>
+            <body>
+            
+            <p>List 1:</p>
+            <ul>
+              <li>Coffee</li>
+              <li>Milk</li>
+              <li>Tea</li>
+            </ul>
+            
+            <p>List 2:</p>
+            <ul>
+              <li>Coffee</li>
+              <li>Milk</li>
+              <li>Tea</li>
+            </ul>
+            
+            <button>Click me</button> -->
+
+  <!-- 12 -->
+
+  <!-- <script>
+            $(document).ready(function(){
+              $("button").click(function(){
+                $("[href]").hide();
+              });
+            });
+            </script>
+            
+            
+            <h2>This is a heading</h2>
+            
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+            <p><a href="https://www.w3schools.com/html/">HTML Tutorial</a></p>
+            <p><a href="https://www.w3schools.com/css/">CSS Tutorial</a></p>
+            
+            <button>Click me</button> -->
+
+  <!-- 13 -->
+
+  <!-- <script>
+            $(document).ready(function(){
+              $("button").click(function(){
+                $("a[target='_blank']").hide();
+              });
+            });
+            </script>
+            
+            
+            <h2>This is a heading</h2>
+            
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+            <p><a href="https://www.w3schools.com/html/" target="_blank">HTML Tutorial</a></p>
+            <p><a href="https://www.w3schools.com/css/">CSS Tutorial</a></p>
+            
+            <button>Click me</button> -->
+
+  <!-- 13 -->
+
+  <!-- <script>
+            $(document).ready(function(){
+              $("button").click(function(){
+                $(":button").hide();
+              });
+            });
+            </script>
+            </head>
+            <body>
+            
+            <h2>This is a heading</h2>
+            
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+            
+            <button>Click me</button> -->
+
+  <!-- 14 -->
+
+  <!-- <script>
+            $(document).ready(function(){
+              $("tr:even").css("background-color", "yellow");
+            });
+            </script>
+            </head>
+            <body>
+            
+            <h1>Welcome to My Web Page</h1>
+            
+            <table border="1">
+              <tr>
+                <th>Company</th>
+                <th>Country</th>
+              </tr>
+              <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Germany</td>
+              </tr>
+              <tr>
+                <td>Berglunds snabbköp</td>
+                <td>Sweden</td>
+              </tr>
+              <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Mexico</td>
+              </tr>
+              <tr>
+                <td>Ernst Handel</td>
+                <td>Austria</td>
+              </tr>
+              <tr>
+                <td>Island Trading</td>
+                <td>UK</td>
+              </tr>
+            </table> -->
+
+  <!-- 15 jQuery Effects -->
+
+  <!-- <script>
+    $(document).ready(function () {
+      $("#hide").click(function () {
+        $("p").hide();
+      });
+      $("#show").click(function () {
+        $("p").show();
+      });
+    });
+  </script>
+
+  <p>If you click on the "Hide" button, I will disappear.</p>
+
+  <button id="hide">Hide</button>
+  <button id="show">Show</button> -->
+
+
+  <!-- 16 -->
+
+  <!-- <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        $("p").toggle();
+      });
+    });
+  </script>
+
+  <button>Toggle between hiding and showing the paragraphs</button>
+
+  <p>This is a paragraph with little content.</p>
+  <p>This is another small paragraph.</p> -->
+
+  <!-- 17 -->
+
+  <!-- <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        $("#div1").fadeIn();
+        $("#div2").fadeIn("slow");
+        $("#div3").fadeIn(3000);
+      });
+    });
+  </script>
+
+  <p>Demonstrate fadeIn() with different parameters.</p>
+
+  <button>Click to fade in boxes</button><br><br>
+
+  <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+  <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+  <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div> -->
+
+
+  <!-- 18 -->
+  <!-- <script> 
+  $(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideToggle("slow");
+    });
+  });
+  </script>
+  <style> 
+  #panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+  }
+  
+  #panel {
+    padding: 50px;
+    display: none;
+  }
+  </style>
+
+   
+  <div id="flip">Click to slide the panel down or up</div>
+  <div id="panel">Hello world!</div> -->
+
+  <!-- 19 -->
+  <!-- <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("p").hide("slow", function(){
+          alert("The paragraph is now hidden");
+        });
+      });
+    });
+    </script>
+        
+    <button>Hide</button>
+    
+    <p>This is a paragraph with little content.</p> -->
+
+    <!-- 20 -->
+
+    <!-- <script>
+      $(document).ready(function(){
+        $("button").click(function(){
+          $("#p1").css("color", "red")
+            .slideUp(2000)
+            .slideDown(2000);
+        });
+      });
+      </script>
+            
+      <p id="p1">jQuery is fun!!</p>
+      
+      <button>Click me</button> -->
+
+
+
+
+
+
+</body>
+
+</html>
